@@ -1,0 +1,7 @@
+name: docker-build-push
+description: buildx, SBOM attach, cosign sign
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo 'docker-build-push composite action — see spec'

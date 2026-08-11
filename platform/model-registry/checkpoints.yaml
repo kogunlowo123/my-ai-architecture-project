@@ -1,0 +1,2 @@
+# promoted checkpoints from training/evals-gate; gateway routes only to what is listed
+checkpoints: []

@@ -1,0 +1,2 @@
+critical: {fix_days: 7}
+high: {fix_days: 30}

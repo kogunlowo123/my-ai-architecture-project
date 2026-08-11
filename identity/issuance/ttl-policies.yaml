@@ -1,0 +1,5 @@
+T0: 60m
+T1: 30m
+T2: 15m
+T3: 5m
+# refresh only via re-attestation

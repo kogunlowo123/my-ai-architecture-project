@@ -1,0 +1,8 @@
+name: train
+on: {workflow_dispatch: {inputs: {dataset_pin: {required: true, type: string}}}}
+jobs:
+  train:
+    runs-on: ubuntu-latest   # swap for gpu-runner composite when pools exist
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo 'dataset pin -> checkpoint; posts eval delta vs incumbent; never auto-promotes'

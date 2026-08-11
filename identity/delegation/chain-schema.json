@@ -1,0 +1,4 @@
+{
+  "title": "DelegationLink",
+  "required": ["delegator", "delegatee", "purpose", "expires", "signature"]
+}

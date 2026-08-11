@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment: {POSTGRES_PASSWORD: dev, POSTGRES_DB: platform}
+    ports: ['5432:5432']
+  opensearch:
+    image: opensearchproject/opensearch:2.13.0
+    environment: {discovery.type: single-node, DISABLE_SECURITY_PLUGIN: 'true'}
+    ports: ['9200:9200']
+  redis:
+    image: redis:7-alpine
+    ports: ['6379:6379']
+  langfuse:
+    image: langfuse/langfuse:2
+    ports: ['3000:3000']
+    depends_on: [postgres]
+  gateway:
+    build: platform/gateway
+    ports: ['8080:8080']
+    env_file: .env
+  api:
+    build: services/api
+    ports: ['8000:8000']
+    depends_on: [gateway, postgres, redis]
+    env_file: .env

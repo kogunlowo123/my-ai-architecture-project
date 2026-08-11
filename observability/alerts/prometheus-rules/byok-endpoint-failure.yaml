@@ -1,0 +1,3 @@
+groups:
+  - name: byok-endpoint-failure
+    rules: []

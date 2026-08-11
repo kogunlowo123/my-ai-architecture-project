@@ -1,0 +1,3 @@
+# sha256-pinned prompt versions; owner + eval baseline per prompt
+prompts:
+  grounded_answer: {version: 1, sha256: PIN_IN_CI, owner: platform, eval_baseline: evals/regression/baselines}

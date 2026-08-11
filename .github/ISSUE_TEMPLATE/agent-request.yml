@@ -1,0 +1,7 @@
+name: agent-request
+description: agent request
+body:
+  - type: textarea
+    id: detail
+    attributes: {label: Detail}
+    validations: {required: true}

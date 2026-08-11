@@ -1,0 +1,2 @@
+labels: [public, internal, confidential, restricted, phi, taxpayer]
+# applied at ingestion, carried on the chunk, checked on the response path

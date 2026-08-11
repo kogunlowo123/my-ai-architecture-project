@@ -1,0 +1,20 @@
+name: pages
+# Manual-only for now: this repo is created PRIVATE, and GitHub Pages needs a
+# public repo (or a paid plan). To publish web/index.html as a live site:
+#   1. gh repo edit --visibility public
+#   2. Settings > Pages > Build and deployment > Source = GitHub Actions
+#   3. add `push: {branches: [main]}` back to the triggers below
+on:
+  workflow_dispatch: {}
+permissions: {contents: read, pages: write, id-token: write}
+jobs:
+  deploy:
+    environment: {name: github-pages, url: '${{ steps.deployment.outputs.page_url }}'}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: web}
+      - id: deployment
+        uses: actions/deploy-pages@v4

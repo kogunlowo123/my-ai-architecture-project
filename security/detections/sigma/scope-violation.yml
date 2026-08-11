@@ -1,0 +1,5 @@
+title: scope violation
+status: experimental
+logsource: {product: platform}
+detection: {condition: selection}
+tags: [attack.t1078]

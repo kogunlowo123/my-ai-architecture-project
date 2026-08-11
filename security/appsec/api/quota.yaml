@@ -1,0 +1,3 @@
+per_key: {qps: 20}
+per_tenant: {qps: 100}
+# no unauthenticated write path — enforced by authz-matrix

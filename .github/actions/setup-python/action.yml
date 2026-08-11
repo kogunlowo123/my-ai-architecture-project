@@ -1,0 +1,7 @@
+name: setup-python
+description: uv install, cache, lockfile verify
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo 'setup-python composite action — see spec'

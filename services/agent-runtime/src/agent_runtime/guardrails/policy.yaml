@@ -1,0 +1,1 @@
+pipeline: [input_screen, injection, generate, output_redact, grounding_check, citation_validator, confidence_floor]

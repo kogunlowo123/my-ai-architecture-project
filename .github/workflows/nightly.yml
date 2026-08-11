@@ -1,0 +1,8 @@
+name: nightly
+on: {schedule: [{cron: '0 6 * * *'}]}
+jobs:
+  full-suite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo 'full eval suite + red-team corpus + dependency drift'

@@ -1,0 +1,8 @@
+# model routing by task class, tenant, risk tier
+routes:
+  - match: {task: grounded-qa, tier: [T0, T1]}
+    model: claude-sonnet-4-6
+  - match: {task: agentic, tier: [T2, T3]}
+    model: claude-opus-4-8
+  - match: {task: bulk-summarize}
+    model: claude-haiku-4-5

@@ -1,0 +1,57 @@
+# Agent registry manifest — the source of truth the orchestrator enforces.
+# Tier changes require an eval report linked in the PR (see docs/governance.md).
+agents:
+  prior_auth:
+    domain: healthcare
+    owner: payer-ops-platform@example.com
+    tier: 2
+    capabilities: [gather_evidence, draft_recommendation, stage_approval_packet]
+    mcp_audience: mcp:fhir-gateway
+    read_scopes: [fhir:read:coverage, fhir:read:servicerequest, fhir:read:clinicalpolicy]
+    write_scopes: [priorauth:stage:packet]
+    hard_limits: {}
+  claims_navigator:
+    domain: healthcare
+    owner: payer-ops-platform@example.com
+    tier: 3
+    capabilities: [enrich_status, explain_eob]
+    mcp_audience: mcp:fhir-gateway
+    read_scopes: [fhir:read:claim, fhir:read:claimresponse]
+    write_scopes: []
+    hard_limits: {rate_per_minute: 300, reversible_only: true}
+  member_services_copilot:
+    domain: healthcare
+    owner: member-experience@example.com
+    tier: 1
+    capabilities: [surface_benefits, next_best_action]
+    mcp_audience: mcp:fhir-gateway
+    read_scopes: [fhir:read:coverage, fhir:read:accumulator]
+    write_scopes: []
+    hard_limits: {}
+  tax_determination:
+    domain: tax
+    owner: tax-platform@example.com
+    tier: 3
+    capabilities: [suggest_mapping, resolve_situs, lookup_rate]
+    mcp_audience: mcp:tax-engine
+    read_scopes: [tax:read:content, tax:read:boundaries]
+    write_scopes: []
+    hard_limits: {rate_per_minute: 600, jurisdiction_scope: [US], reversible_only: true}
+  exemption_handler:
+    domain: tax
+    owner: tax-platform@example.com
+    tier: 2
+    capabilities: [extract_certificate, validate_certificate, stage_profile_update]
+    mcp_audience: mcp:tax-engine
+    read_scopes: [tax:read:customer_profile]
+    write_scopes: [tax:stage:profile_update]
+    hard_limits: {}
+  filing_readiness:
+    domain: tax
+    owner: tax-platform@example.com
+    tier: 2
+    capabilities: [reconcile, flag_anomalies, draft_liability_summary]
+    mcp_audience: mcp:tax-engine
+    read_scopes: [tax:read:ledger, tax:read:returns]
+    write_scopes: [tax:stage:filing_packet]
+    hard_limits: {}

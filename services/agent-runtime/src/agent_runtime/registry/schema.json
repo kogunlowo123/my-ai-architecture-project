@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent",
+  "required": ["name", "tier", "owner", "tools", "rag_binding"],
+  "properties": {
+    "name": {"type": "string"},
+    "tier": {"enum": ["T0", "T1", "T2", "T3"]},
+    "owner": {"type": "string"},
+    "tools": {"type": "array", "items": {"type": "string"}},
+    "rag_binding": {"type": "string"}
+  }
+}

@@ -1,0 +1,4 @@
+# Per-developer overrides. Copy to docker-compose.override.yml (gitignored).
+services:
+  api:
+    volumes: ['./services/api/src:/app/src']

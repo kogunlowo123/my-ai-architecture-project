@@ -1,0 +1,4 @@
+listen: 0.0.0.0:8080
+timeouts: {connect_s: 5, read_s: 120}
+retry_budget: {attempts: 2, backoff_ms: 250}
+streaming: {buffer_kb: 64}

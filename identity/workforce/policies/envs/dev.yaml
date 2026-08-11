@@ -1,0 +1,3 @@
+mfa_class: standard
+session_ttl_minutes: 480
+jit_approvers: 1

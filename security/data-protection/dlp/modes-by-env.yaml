@@ -1,0 +1,3 @@
+dev: monitor
+staging: enforce
+prod: enforce

@@ -1,0 +1,3 @@
+chat_availability: 99.9
+p95_first_token_s: 1.5
+ingestion_freshness_h: 1

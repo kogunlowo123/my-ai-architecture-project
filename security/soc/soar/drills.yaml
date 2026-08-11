@@ -1,0 +1,3 @@
+# an undrilled playbook is disabled
+playbooks: [isolate-host, revoke-session, disable-app, quarantine-index]
+cadence: quarterly

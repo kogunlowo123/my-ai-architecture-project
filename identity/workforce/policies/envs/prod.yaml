@@ -1,0 +1,3 @@
+mfa_class: phishing-resistant
+session_ttl_minutes: 120
+jit_approvers: 2

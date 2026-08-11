@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+docker-compose.override.yml
+*.tfstate
+*.tfstate.backup
+.terraform/
+node_modules/
+.DS_Store
+dist/

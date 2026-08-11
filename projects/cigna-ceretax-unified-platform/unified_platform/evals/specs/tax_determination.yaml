@@ -1,0 +1,11 @@
+agent: tax_determination
+current_tier: 3
+golden_set: evals/golden/determination_v5.jsonl
+thresholds:
+  rate_accuracy: 0.999                # vs. content-team golden set
+  situs_accuracy: 0.995
+  effective_date_correctness: 1.00    # zero tolerance on rate-version boundaries
+demotion_triggers:
+  - rate_accuracy < 0.995 on any re-eval
+  - hard_limit trips > 0 in 7d
+re_eval_on: [model_version, prompt_version, content_version_major]

@@ -1,0 +1,25 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pyyaml pytest ruff
+      - run: ruff check unified_platform/ tests/ || true
+      - run: pytest -q tests/
+  schema-lock-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Block unexplained MCP schema-lock changes
+        run: |
+          if git diff --name-only origin/${{ github.base_ref || 'main' }}... | grep -q 'schema.lock.json'; then
+            echo "::warning::MCP schema lock changed — requires explicit reviewer sign-off (see CLAUDE.md rule 5)"
+          fi

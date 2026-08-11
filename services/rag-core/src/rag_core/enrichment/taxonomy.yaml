@@ -1,0 +1,2 @@
+# governed tag vocabulary; unknown tags quarantined, not indexed
+doc_types: [policy, runbook, contract, ticket, transcript]

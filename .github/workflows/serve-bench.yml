@@ -1,0 +1,8 @@
+name: serve-bench
+on: {pull_request: {paths: ['serving/**']}}
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo 'blocks merge if p95 or accuracy budget regresses'

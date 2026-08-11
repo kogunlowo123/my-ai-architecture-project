@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.0
+    hooks: [{id: ruff}, {id: ruff-format}]
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.0
+    hooks: [{id: gitleaks}]
+  - repo: local
+    hooks:
+      - id: prompt-registry-pin-check
+        name: prompt registry pin check
+        entry: python tools/agentctl/src/agentctl/validate.py --pins
+        language: system
+        files: 'prompts/registry.yaml|pins.sha256'

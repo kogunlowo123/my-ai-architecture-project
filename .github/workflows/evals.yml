@@ -1,0 +1,10 @@
+name: evals
+on:
+  pull_request:
+    paths: ['**/prompts/**', '**/retrieval/**', '**/registry/**']
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python evals/runners/ci_gate.py --changed-surface auto || true  # required check once suites populated

@@ -1,0 +1,5 @@
+source: company-handbook
+freshness_sla_hours: 24
+owner: knowledge-ops
+pii_class: low
+chunking_strategy: structural

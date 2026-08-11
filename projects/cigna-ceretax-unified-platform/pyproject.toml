@@ -1,0 +1,11 @@
+[project]
+name = "agentic-unified-platform"
+version = "0.1.0"
+description = "Enterprise unified platform for governed agentic workflows (healthcare payer + tax compliance)"
+requires-python = ">=3.12"
+dependencies = ["pyyaml>=6.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# Run pytest from this project directory so the local `unified_platform` package resolves.

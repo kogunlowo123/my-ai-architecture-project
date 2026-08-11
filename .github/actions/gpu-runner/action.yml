@@ -1,0 +1,7 @@
+name: gpu-runner
+description: claims GPU runner, mounts dataset cache, tears down
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo 'gpu-runner composite action — see spec'

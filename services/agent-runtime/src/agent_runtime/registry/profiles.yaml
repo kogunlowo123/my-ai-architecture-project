@@ -1,0 +1,5 @@
+tiers:
+  T0: {tools: read-only, approval: none}
+  T1: {tools: read+draft, approval: none}
+  T2: {tools: write, approval: per-action}
+  T3: {tools: write, approval: policy-gated, hard_limits: required}

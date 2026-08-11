@@ -1,0 +1,2 @@
+# per-source retention, legal-hold override
+defaults: {days: 400}
