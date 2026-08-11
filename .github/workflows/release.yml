@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     permissions: {contents: write, id-token: write}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: softprops/action-gh-release@v2

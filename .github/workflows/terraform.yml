@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy: {matrix: {cloud: [aws], env: [dev]}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: hashicorp/setup-terraform@v3
       - working-directory: infra/envs/${{ matrix.cloud }}/${{ matrix.env }}
         run: terraform init -backend=false && terraform validate

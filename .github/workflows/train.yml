@@ -4,5 +4,5 @@ jobs:
   train:
     runs-on: ubuntu-latest   # swap for gpu-runner composite when pools exist
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: echo 'dataset pin -> checkpoint; posts eval delta vs incumbent; never auto-promotes'
