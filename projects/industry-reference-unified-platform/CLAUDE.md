@@ -2,7 +2,7 @@
 
 ## What this repo is
 Enterprise Unified Platform for governed agentic workflows across two regulated domains:
-healthcare payer operations (HIPAA/PHI) and transaction tax compliance (CereTax-style).
+healthcare payer operations (HIPAA/PHI) and transaction transaction tax compliance.
 Owner: Kehinde Ogunlowo (AI Platform Architect / Forward Deployed Engineer).
 
 ## Non-negotiable rules

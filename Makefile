@@ -7,7 +7,7 @@ lint:
 	.venv/bin/ruff check services platform tools projects
 
 test:
-	cd projects/cigna-ceretax-unified-platform && ../../.venv/bin/pytest -q
+	cd projects/industry-reference-unified-platform && ../../.venv/bin/pytest -q
 
 eval:
 	.venv/bin/python evals/runners/cli.py --suite regression --env local

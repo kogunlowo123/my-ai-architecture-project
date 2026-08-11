@@ -4,7 +4,7 @@
 
 > **Status: reference architecture blueprint.** The tree, contracts, and design are complete;
 > ~90% of leaf files are intentional stubs marking where implementation goes. The
-> `projects/cigna-ceretax-unified-platform/` sub-project is a real, unit-tested reference
+> `projects/industry-reference-unified-platform/` sub-project is a real, unit-tested reference
 > implementation. See [`PRODUCTION-READINESS.md`](PRODUCTION-READINESS.md) for a measured,
 > per-subsystem status. Publish as a portfolio/architecture artifact — not as deployable
 > production infrastructure.
@@ -17,9 +17,9 @@ One repository, two layers:
    RAG spine, a tiered agent runtime (T0–T3), agentic identity (SPIFFE, delegation chains, token
    TTL by tier), workforce identity, defensive RAG, training/serving planes, evals with red-team
    and security scoring, and GitOps deploy with eval-gated canaries.
-2. **`projects/cigna-ceretax-unified-platform/`** — a working, tested reference implementation of
-   governed agentic workflows for a healthcare payer (Cigna-scale, HIPAA) and a tax-compliance
-   platform (CereTax-style): tier-enforcing orchestrator, hash-chained audit log (unit-tested),
+2. **`projects/industry-reference-unified-platform/`** — a working, tested reference implementation of
+   governed agentic workflows for a healthcare payer (HIPAA) and a transaction-tax
+   compliance platform: tier-enforcing orchestrator, hash-chained audit log (unit-tested),
    per-agent workload identity, and its own env-per-folder Terraform. Ships as a Claude Code
    project (`.claude/` sub-agents and commands).
 
@@ -49,7 +49,7 @@ make up                          # local stack: postgres+pgvector, opensearch, r
 | Helm, ArgoCD, canaries | `deploy/` |
 | OTel, dashboards, SLOs | `observability/` |
 | CLIs (agentctl, corpusctl, costctl) | `tools/` |
-| Working governed-agents reference | `projects/cigna-ceretax-unified-platform/` |
+| Working governed-agents reference | `projects/industry-reference-unified-platform/` |
 
 ## The complete tree — one view
 
@@ -162,7 +162,7 @@ ai-agent-platform/
 ├── web/                           static architecture brief (GitHub Pages)
 │
 └── projects/
-    └── cigna-ceretax-unified-platform/   working, unit-tested governed-agents reference
+    └── industry-reference-unified-platform/   working, unit-tested governed-agents reference
                                           (healthcare payer HIPAA + tax compliance)
 ```
 

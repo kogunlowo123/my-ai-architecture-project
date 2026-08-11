@@ -1,4 +1,4 @@
-# Industry brief — Tax compliance platform (CereTax)
+# Industry brief — Tax compliance platform
 
 ## Workflows on-platform
 

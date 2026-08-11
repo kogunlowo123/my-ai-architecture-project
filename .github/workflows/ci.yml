@@ -9,6 +9,6 @@ jobs:
         with: {python-version: '3.12'}
       - run: pip install pyyaml pytest ruff
       - run: ruff check projects services || true
-      - name: unit tests (cigna-ceretax reference project)
-        working-directory: projects/cigna-ceretax-unified-platform
+      - name: unit tests (industry reference project)
+        working-directory: projects/industry-reference-unified-platform
         run: pytest -q

@@ -1,4 +1,4 @@
-# Industry brief — Healthcare payer (Cigna-scale)
+# Industry brief — Healthcare payer
 
 ## Workflows on-platform
 

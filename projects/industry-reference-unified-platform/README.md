@@ -1,7 +1,7 @@
 # Enterprise Unified Platform — Agentic Workflows for Regulated Industries
 
 **Author:** Kehinde Ogunlowo — AI Platform Architect & Forward Deployed Engineer
-**Reference engagements:** Healthcare payer (Cigna-scale) · Tax compliance SaaS (CereTax)
+**Reference engagements:** Healthcare payer · Tax compliance SaaS
 
 A production-grade reference platform for deploying **governed AI agents** in two regulated
 domains that share the same hard problem: a probabilistic model being handed deterministic,
@@ -9,7 +9,7 @@ audited capabilities.
 
 - **Healthcare (payer operations):** prior authorization triage, claims adjudication support,
   member-services copilots — all touching PHI under HIPAA.
-- **Tax compliance (CereTax-style):** transaction tax determination, exemption certificate
+- **Tax compliance:** transaction tax determination, exemption certificate
   handling, filing-readiness checks — where a wrong answer is a financial and regulatory event.
 
 ## Why one platform for two industries

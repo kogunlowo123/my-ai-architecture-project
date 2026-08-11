@@ -3,7 +3,7 @@
 **Short answer: this repository is a _reference architecture blueprint_, not a running
 production system.** The directory tree, the contracts, and the design are complete and
 coherent. The vast majority of the leaf files are intentionally empty or short stubs that
-mark where implementation goes. One sub-project (`projects/cigna-ceretax-unified-platform/`)
+mark where implementation goes. One sub-project (`projects/industry-reference-unified-platform/`)
 is a real, unit-tested reference implementation.
 
 Publish it as a portfolio / architecture artifact. Do **not** point it at a cloud account
@@ -29,7 +29,7 @@ is the shape of a platform, waiting to be filled.
 
 | Subsystem | Files | Empty | > 200B | State |
 |---|---:|---:|---:|---|
-| `projects/` (cigna-ceretax) | 97 | 17 | 67 | **Working + tested** — the one real implementation |
+| `projects/` (industry-reference) | 97 | 17 | 67 | **Working + tested** — the one real implementation |
 | `.github/` | 20 | 0 | 10 | Workflows present; only `ci` + `security` run on push |
 | `infra/` | 192 | 34 | 7 | Contract structure only; `.tf` files are comment stubs |
 | `services/` | 176 | 3 | 7 | Package layout + a few configs; no runnable service |
@@ -56,7 +56,7 @@ directory contracts, not implementations.
 
 ## What actually works today
 
-- `projects/cigna-ceretax-unified-platform/` — tier-enforcing orchestrator, hash-chained
+- `projects/industry-reference-unified-platform/` — tier-enforcing orchestrator, hash-chained
   audit log, per-agent workload identity, MCP server skeletons. **2 unit tests pass**
   (`pytest -q` from that directory; CI runs them on every push).
 - `web/index.html` — self-contained static architecture brief.

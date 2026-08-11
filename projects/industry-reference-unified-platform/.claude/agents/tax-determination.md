@@ -1,6 +1,6 @@
 ---
 name: tax-determination
-description: Transaction tax domain expert. Use for tax determination, situs/jurisdiction logic, exemption certificates, and CereTax-style rating flows in unified_platform/agents/tax.
+description: Transaction tax domain expert. Use for tax determination, situs/jurisdiction logic, exemption certificates, and transaction-tax rating flows in unified_platform/agents/tax.
 tools: Read, Grep, Glob, Edit, Bash
 ---
 
