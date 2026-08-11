@@ -1,0 +1,7 @@
+name: setup-terraform
+description: version pin, plugin cache, tflint
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo 'setup-terraform composite action — see spec'

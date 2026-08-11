@@ -1,0 +1,4 @@
+chains:
+  default: [primary, secondary, degraded-static]
+degraded-static:
+  answer: "The platform is in degraded mode; a cited answer is unavailable. Your request was logged."

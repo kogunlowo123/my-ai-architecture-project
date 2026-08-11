@@ -1,0 +1,2 @@
+default: phishing-resistant
+sms_for_admin: denied

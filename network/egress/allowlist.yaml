@@ -1,0 +1,2 @@
+# model endpoints private, package mirrors pinned, all egress logged
+allow: []

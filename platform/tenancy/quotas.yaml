@@ -1,0 +1,1 @@
+defaults: {qps: 10, tokens_per_day: 1000000, storage_gb: 50, concurrent_sessions: 20}

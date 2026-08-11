@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make:*)",
+      "Bash(pytest:*)",
+      "Bash(terraform plan:*)",
+      "Bash(terraform validate:*)",
+      "Read(**)",
+      "Edit(platform/**)",
+      "Edit(docs/**)",
+      "Edit(tests/**)"
+    ],
+    "deny": [
+      "Bash(terraform apply:*)",
+      "Bash(terraform destroy:*)",
+      "Read(.env)",
+      "Edit(unified_platform/mcp_servers/**/schema.lock.json)"
+    ]
+  }
+}

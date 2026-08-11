@@ -1,0 +1,1 @@
+new_tenant: {namespaces: 1, default_corpora: [company-handbook], quotas_ref: quotas.yaml}

@@ -1,0 +1,4 @@
+{
+  "title": "ChunkMetadata",
+  "required": ["system", "provenance", "semantic", "structure"]
+}

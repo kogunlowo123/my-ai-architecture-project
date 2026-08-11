@@ -1,0 +1,6 @@
+name: prior-auth-triage
+tier: T2
+owner: payer-ops-platform
+tools: [rag_search, ticketing]
+rag_binding: corpus:clinical-policies
+notes: adverse determinations never auto-execute; see projects/industry-reference-unified-platform

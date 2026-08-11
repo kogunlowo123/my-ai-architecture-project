@@ -1,0 +1,7 @@
+name: eval-gate
+description: runs evals/runners/ci_gate.py, posts score diff
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo 'eval-gate composite action — see spec'

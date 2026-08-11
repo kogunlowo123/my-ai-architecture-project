@@ -1,0 +1,6 @@
+name: tax-determination
+tier: T3
+owner: tax-platform
+tools: [rag_search, sql_readonly]
+rag_binding: corpus:tax-content
+hard_limits: {rate_per_minute: 600, jurisdiction_scope: [US], reversible_only: true}

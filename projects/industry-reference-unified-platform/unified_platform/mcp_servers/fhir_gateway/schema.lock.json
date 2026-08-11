@@ -1,0 +1,7 @@
+{
+  "server": "mcp:fhir-gateway",
+  "schema_version": "1.3.0",
+  "signed_by": "alias/mcp-schema-signing",
+  "signature": "REPLACED_IN_CI",
+  "tools_sha256": "REPLACED_IN_CI"
+}

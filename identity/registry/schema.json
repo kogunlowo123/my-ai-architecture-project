@@ -1,0 +1,4 @@
+{
+  "title": "AgentIdentity",
+  "required": ["owner", "tier", "tool_grants", "prompt_pin"]
+}

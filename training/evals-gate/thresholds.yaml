@@ -1,0 +1,2 @@
+regression: {max_score_drop: 0.0}
+security: {red_team_failures: 0}

@@ -1,0 +1,4 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata: {name: restrict-registries}
+spec: {validationFailureAction: Enforce, rules: []}

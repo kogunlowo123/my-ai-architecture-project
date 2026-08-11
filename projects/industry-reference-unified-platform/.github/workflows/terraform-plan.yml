@@ -1,0 +1,50 @@
+name: terraform
+on:
+  pull_request:
+    paths: ["infrastructure/terraform/**"]
+  push:
+    branches: [main]
+    paths: ["infrastructure/terraform/**"]
+
+permissions:
+  id-token: write   # GitHub OIDC -> AWS role, no long-lived keys
+  contents: read
+  pull-requests: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: { env: [dev, staging, prod] }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with: { terraform_version: "1.9.5" }
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::111111111111:role/aup-terraform-plan
+          aws-region: us-east-1
+      - name: Validate & plan
+        working-directory: infrastructure/terraform/environments/${{ matrix.env }}
+        run: |
+          terraform init -input=false
+          terraform validate
+          terraform plan -input=false -no-color -out=tfplan
+
+  apply:
+    if: github.ref == 'refs/heads/main'
+    needs: plan
+    runs-on: ubuntu-latest
+    environment: production   # requires manual reviewer approval in repo settings
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::111111111111:role/aup-terraform-apply
+          aws-region: us-east-1
+      - name: Apply (prod, gated)
+        working-directory: infrastructure/terraform/environments/prod
+        run: |
+          terraform init -input=false
+          terraform apply -input=false -auto-approve

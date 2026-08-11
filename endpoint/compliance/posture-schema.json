@@ -1,0 +1,3 @@
+{
+  "required": ["encryption_on", "edr_healthy", "patch_age_days", "os_build_floor"]
+}

@@ -1,0 +1,1 @@
+"""budget_sync.py — see tree spec; implementation surface for this module."""

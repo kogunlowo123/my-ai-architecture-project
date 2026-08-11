@@ -1,0 +1,4 @@
+defaults: {tokens_per_day: 2000000, usd_per_day: 50}
+per_agent: {}
+per_tenant: {}
+hard_stop: true   # not a soft warn

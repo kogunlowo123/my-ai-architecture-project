@@ -1,0 +1,3 @@
+issuer: https://idp.example.com
+audiences: [platform-api]
+claim_mappings: {sub: user_id, groups: roles}

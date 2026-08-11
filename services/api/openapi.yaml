@@ -1,0 +1,4 @@
+openapi: 3.1.0
+info: {title: platform-api, version: 0.1.0}
+paths: {}
+# spec is generated; SDKs build from it, never hand-edited

@@ -1,0 +1,4 @@
+owner: platform
+tier: T1
+tool_grants: [rag_search]
+prompt_pin: sha256:PIN

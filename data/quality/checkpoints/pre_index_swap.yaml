@@ -1,0 +1,2 @@
+# failing suite blocks index promotion; no override flag exists on purpose
+suite: [chunk_length, duplicate_rate, pii_leak_scan, embedding_norm]

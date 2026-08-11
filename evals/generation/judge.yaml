@@ -1,0 +1,3 @@
+# pinned judge model + rubric; judge drift itself is eval'd
+judge_model: claude-sonnet-4-6
+rubric_version: 1

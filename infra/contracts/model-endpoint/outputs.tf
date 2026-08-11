@@ -1,0 +1,1 @@
+# Contract outputs: model-endpoint

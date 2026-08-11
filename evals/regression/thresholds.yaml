@@ -1,0 +1,2 @@
+fail_on_score_drop: true
+red_team_failures_block_regardless_of_margin: true

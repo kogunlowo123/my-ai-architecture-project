@@ -1,0 +1,4 @@
+semantic_cache:
+  similarity_threshold: 0.96
+  ttl_minutes: 60
+  per_tenant_opt_out: true

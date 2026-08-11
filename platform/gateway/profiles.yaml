@@ -1,0 +1,5 @@
+profiles:
+  fast:       {ttft_budget_ms: 800}
+  balanced:   {ttft_budget_ms: 1500}
+  thorough:   {ttft_budget_ms: 3000}
+  exhaustive: {async: true}
