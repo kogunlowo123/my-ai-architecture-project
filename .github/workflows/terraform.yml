@@ -10,6 +10,6 @@ jobs:
     strategy: {matrix: {cloud: [aws], env: [dev]}}
     steps:
       - uses: actions/checkout@v4
-      - uses: hashicorp/setup-terraform@v3
+      - uses: hashicorp/setup-terraform@v4
       - working-directory: infra/envs/${{ matrix.cloud }}/${{ matrix.env }}
         run: terraform init -backend=false && terraform validate
