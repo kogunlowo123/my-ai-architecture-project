@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 888 748" width="888" height="748" role="img" aria-label="my-ai-architecture-project architecture">
+<title>my-ai-architecture-project architecture</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect width="888" height="748" fill="#ffffff"/>
+<text x="24" y="34" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="600" fill="#0f172a">my-ai-architecture-project</text>
+<text x="24" y="56" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#475569">Top-level components. Stack: Python, TypeScript, Terraform, HTML. Generated from the repository layout.</text>
+<rect x="24" y="80" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="104" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">infra/</text>
+<text x="38" y="126" font-family="Consolas,monospace" font-size="12" fill="#334155">192 files</text>
+<text x="38" y="144" font-family="Consolas,monospace" font-size="12" fill="#334155">aws</text>
+<text x="38" y="162" font-family="Consolas,monospace" font-size="12" fill="#334155">azure</text>
+<text x="38" y="180" font-family="Consolas,monospace" font-size="12" fill="#334155">bootstrap</text>
+<text x="38" y="198" font-family="Consolas,monospace" font-size="12" fill="#334155">contracts</text>
+<rect x="312" y="80" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="104" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">services/</text>
+<text x="326" y="126" font-family="Consolas,monospace" font-size="12" fill="#334155">176 files</text>
+<text x="326" y="144" font-family="Consolas,monospace" font-size="12" fill="#334155">agent-runtime</text>
+<text x="326" y="162" font-family="Consolas,monospace" font-size="12" fill="#334155">api</text>
+<text x="326" y="180" font-family="Consolas,monospace" font-size="12" fill="#334155">rag-core</text>
+<text x="326" y="198" font-family="Consolas,monospace" font-size="12" fill="#334155">workers</text>
+<rect x="600" y="80" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="104" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">security/</text>
+<text x="614" y="126" font-family="Consolas,monospace" font-size="12" fill="#334155">111 files</text>
+<text x="614" y="144" font-family="Consolas,monospace" font-size="12" fill="#334155">appsec</text>
+<text x="614" y="162" font-family="Consolas,monospace" font-size="12" fill="#334155">compliance</text>
+<text x="614" y="180" font-family="Consolas,monospace" font-size="12" fill="#334155">data-protection</text>
+<text x="614" y="198" font-family="Consolas,monospace" font-size="12" fill="#334155">defensive-rag</text>
+<rect x="24" y="242" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="266" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">projects/</text>
+<text x="38" y="288" font-family="Consolas,monospace" font-size="12" fill="#334155">97 files</text>
+<text x="38" y="306" font-family="Consolas,monospace" font-size="12" fill="#334155">industry-reference-unified-platfor</text>
+<rect x="312" y="242" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="266" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">identity/</text>
+<text x="326" y="288" font-family="Consolas,monospace" font-size="12" fill="#334155">86 files</text>
+<text x="326" y="306" font-family="Consolas,monospace" font-size="12" fill="#334155">authorization</text>
+<text x="326" y="324" font-family="Consolas,monospace" font-size="12" fill="#334155">delegation</text>
+<text x="326" y="342" font-family="Consolas,monospace" font-size="12" fill="#334155">detections</text>
+<text x="326" y="360" font-family="Consolas,monospace" font-size="12" fill="#334155">federation</text>
+<rect x="600" y="242" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="266" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">deploy/</text>
+<text x="614" y="288" font-family="Consolas,monospace" font-size="12" fill="#334155">60 files</text>
+<text x="614" y="306" font-family="Consolas,monospace" font-size="12" fill="#334155">argocd</text>
+<text x="614" y="324" font-family="Consolas,monospace" font-size="12" fill="#334155">helm</text>
+<text x="614" y="342" font-family="Consolas,monospace" font-size="12" fill="#334155">overlays</text>
+<text x="614" y="360" font-family="Consolas,monospace" font-size="12" fill="#334155">rollouts</text>
+<rect x="24" y="404" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">network/</text>
+<text x="38" y="450" font-family="Consolas,monospace" font-size="12" fill="#334155">34 files</text>
+<text x="38" y="468" font-family="Consolas,monospace" font-size="12" fill="#334155">connectivity</text>
+<text x="38" y="486" font-family="Consolas,monospace" font-size="12" fill="#334155">dns</text>
+<text x="38" y="504" font-family="Consolas,monospace" font-size="12" fill="#334155">egress</text>
+<text x="38" y="522" font-family="Consolas,monospace" font-size="12" fill="#334155">ingress</text>
+<rect x="312" y="404" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">evals/</text>
+<text x="326" y="450" font-family="Consolas,monospace" font-size="12" fill="#334155">32 files</text>
+<text x="326" y="468" font-family="Consolas,monospace" font-size="12" fill="#334155">agents</text>
+<text x="326" y="486" font-family="Consolas,monospace" font-size="12" fill="#334155">datasets</text>
+<text x="326" y="504" font-family="Consolas,monospace" font-size="12" fill="#334155">generation</text>
+<text x="326" y="522" font-family="Consolas,monospace" font-size="12" fill="#334155">red-team</text>
+<rect x="600" y="404" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">data/</text>
+<text x="614" y="450" font-family="Consolas,monospace" font-size="12" fill="#334155">28 files</text>
+<text x="614" y="468" font-family="Consolas,monospace" font-size="12" fill="#334155">contracts</text>
+<text x="614" y="486" font-family="Consolas,monospace" font-size="12" fill="#334155">lineage</text>
+<text x="614" y="504" font-family="Consolas,monospace" font-size="12" fill="#334155">pipelines</text>
+<text x="614" y="522" font-family="Consolas,monospace" font-size="12" fill="#334155">quality</text>
+<rect x="24" y="566" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">platform/</text>
+<text x="38" y="612" font-family="Consolas,monospace" font-size="12" fill="#334155">28 files</text>
+<text x="38" y="630" font-family="Consolas,monospace" font-size="12" fill="#334155">accuracy-surface</text>
+<text x="38" y="648" font-family="Consolas,monospace" font-size="12" fill="#334155">authn</text>
+<text x="38" y="666" font-family="Consolas,monospace" font-size="12" fill="#334155">feature-flags</text>
+<text x="38" y="684" font-family="Consolas,monospace" font-size="12" fill="#334155">gateway</text>
+<rect x="312" y="566" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">observability/</text>
+<text x="326" y="612" font-family="Consolas,monospace" font-size="12" fill="#334155">27 files</text>
+<text x="326" y="630" font-family="Consolas,monospace" font-size="12" fill="#334155">alerts</text>
+<text x="326" y="648" font-family="Consolas,monospace" font-size="12" fill="#334155">dashboards</text>
+<text x="326" y="666" font-family="Consolas,monospace" font-size="12" fill="#334155">llm-tracing</text>
+<text x="326" y="684" font-family="Consolas,monospace" font-size="12" fill="#334155">otel</text>
+<rect x="600" y="566" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">docs/</text>
+<text x="614" y="612" font-family="Consolas,monospace" font-size="12" fill="#334155">25 files</text>
+<text x="614" y="630" font-family="Consolas,monospace" font-size="12" fill="#334155">adr</text>
+<text x="614" y="648" font-family="Consolas,monospace" font-size="12" fill="#334155">api</text>
+<text x="614" y="666" font-family="Consolas,monospace" font-size="12" fill="#334155">architecture</text>
+<text x="614" y="684" font-family="Consolas,monospace" font-size="12" fill="#334155">failure-modes</text>
+</svg>

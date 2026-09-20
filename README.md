@@ -184,3 +184,8 @@ ai-agent-platform/
 Anything not on this table is cloud-neutral (Kubernetes, Postgres, Redis, OTel) and identical across all three.
 
 License: MIT.
+
+<!-- architecture -->
+## Architecture
+
+![Architecture diagram](docs/architecture.svg)
